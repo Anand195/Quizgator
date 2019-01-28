@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/Title"
+            android:text="@string/quizname" />
+        <TextView
+            android:id="@+id/quiznamep"
+            style="@style/Title"
+            android:hint="@string/quizname" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/Title"
+            android:text="@string/quizresult" />
+        <TextView
+            android:id="@+id/result"
+            style="@style/Title"
+            android:hint="@string/quizresult" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/Title"
+            android:text="@string/playedtime" />
+        <TextView
+            style="@style/Title"
+            android:id="@+id/playtime"
+            android:hint="@string/playedtime" />
+
+    </TableRow>
+
+</TableLayout>

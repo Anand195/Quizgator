@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/lineql"
+        android:layout_marginBottom="12dp">
+
+        <TextView
+            style="@style/Title"
+            android:text="@string/quizname" />
+        <TextView
+            style="@style/Title"
+            android:text="@string/quizfield" />
+        <TextView
+            style="@style/Title"
+            android:text="@string/noofquestions" />
+        <TextView
+            style="@style/Title"
+            android:text="@string/publishedon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/lineql2"
+        android:layout_toRightOf="@id/lineql"
+        android:layout_marginLeft="12dp">
+
+        <TextView
+            android:id="@+id/quizname"
+            style="@style/Title"
+            android:hint="@string/quizname" />
+        <TextView
+            android:id="@+id/quizfield"
+            style="@style/Title"
+            android:hint="@string/quizfield" />
+        <TextView
+            android:id="@+id/noofquestions"
+            style="@style/Title"
+            android:hint="@string/noofquestions" />
+        <TextView
+            android:id="@+id/publishedon"
+            style="@style/Title"
+            android:hint="@string/publishedon" />
+    </LinearLayout>
+
+    <Button
+        style="@style/Button"
+        android:id="@+id/play"
+        android:text="@string/play"
+        android:background="@color/colorPrimary"
+        android:layout_below="@id/lineql"
+        android:layout_centerHorizontal="true"
+        android:onClick="onPlay"
+        />
+</RelativeLayout>

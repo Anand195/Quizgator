@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/register"
+            style="@style/Heading"
+            android:text="@string/register"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="16dp"/>
+
+        <TextView
+            style="@style/Title"
+            android:text="@string/fname"
+            android:id="@+id/fname"
+            android:layout_below="@id/register"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fnameedittext"
+            android:layout_below="@id/fname"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            style="@style/Title"
+            android:text="@string/lname"
+            android:id="@+id/lname"
+            android:layout_below="@id/fnameedittext"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lnameedittext"
+            android:layout_below="@id/lname"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            style="@style/Title"
+            android:text="@string/mo_no"
+            android:id="@+id/mo_no"
+            android:layout_below="@id/lnameedittext"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mo_noedittext"
+            android:layout_below="@id/mo_no"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            style="@style/Title"
+            android:text="@string/emailid"
+            android:id="@+id/emailidr"
+            android:layout_below="@id/mo_noedittext"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edittextr"
+            android:layout_below="@id/emailidr"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            style="@style/Title"
+            android:text="@string/password"
+            android:id="@+id/passwordr"
+            android:layout_below="@id/edittextr"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edittextr2"
+            android:layout_below="@id/passwordr"
+            android:layout_marginBottom="16dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/edittextr2"
+            android:id="@+id/liner"
+            android:layout_marginBottom="16dp">
+            <Button
+                style="@style/Button"
+                android:id="@+id/submit"
+                android:text="@string/submit"
+                android:background="@color/colorPrimary"
+                android:layout_marginRight="16dp"
+                android:onClick="onSubmit"
+                />
+
+            <Button
+                style="@style/Button"
+                android:id="@+id/reset"
+                android:text="@string/reset"
+                android:onClick="onReset"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

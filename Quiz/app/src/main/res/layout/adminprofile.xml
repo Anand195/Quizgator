@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/adminname"
+        style="@style/Heading"
+        android:text="@string/adminname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="32dp" />
+
+    <Button
+        style="@style/Button"
+        android:id="@+id/createquiz"
+        android:text="@string/createquiz"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="16dp"
+        android:layout_below="@id/adminname"
+        android:layout_marginLeft="16dp"
+        android:layout_alignParentLeft="true"
+        android:padding="16dp"
+        android:onClick="onCreateQuiz"/>
+
+    <TextView
+        style="@style/Title"
+        android:id="@+id/textabc"
+        android:text="@string/createdquiz"
+        android:layout_marginBottom="16dp"
+        android:layout_below="@id/createquiz"
+        android:layout_marginLeft="16dp"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/createdquizlist"
+        android:layout_below="@id/textabc">
+
+    </ListView>
+
+</RelativeLayout>

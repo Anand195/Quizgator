@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/user1"
+        style="@style/Heading"
+        android:text="@string/userlogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="16dp"/>
+
+    <TextView
+        style="@style/Title"
+        android:text="@string/emailid"
+        android:id="@+id/emailidu1"
+        android:layout_below="@id/user1"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edittextu1"
+        android:layout_below="@id/emailidu1"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        style="@style/Title"
+        android:text="@string/password"
+        android:id="@+id/emailidu2"
+        android:layout_below="@id/edittextu1"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edittextu2"
+        android:layout_below="@id/emailidu2"
+        android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edittextu2"
+        android:id="@+id/line1"
+        android:layout_marginBottom="16dp">
+        <Button
+            style="@style/Button"
+            android:id="@+id/userlogin"
+            android:text="@string/login"
+            android:background="@color/colorPrimary"
+            android:layout_marginRight="16dp"
+            android:onClick="userLogin"
+            />
+
+        <Button
+            style="@style/Button"
+            android:id="@+id/userregister"
+            android:text="@string/register"
+            android:onClick="register"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textor"
+        style="@style/Title"
+        android:text="OR"
+        android:layout_below="@id/line1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        style="@style/Button"
+        android:id="@+id/admimloginu"
+        android:text="@string/adminlogin"
+        android:background="@color/colorPrimary"
+        android:layout_marginRight="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textor"
+        android:padding="16dp"
+        android:onClick="adminLogin"
+        />
+</RelativeLayout>

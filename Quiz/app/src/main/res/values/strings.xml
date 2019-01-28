@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Quiz</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_quiz">Search Quiz:</string>
+    <string name="fieldofquiz">Field Of Quiz:</string>
+    <string name="adminlogin">Admin Login</string>
+    <string name="userlogin">User Login</string>
+    <string name="emailid">Email Id:</string>
+    <string name="password">Password:</string>
+    <string name="submit">SUBMIT</string>
+    <string name="login">LOGIN</string>
+    <string name="register">Register</string>
+    <string name="question">Enter Question...</string>
+    <string name="questionno">Q.No</string>
+    <string name="playmorequiz">play more quiz</string>
+    <string name="quizresult">Quiz Result:</string>
+    <string name="playedtime">Played Time:</string>
+    <string name="a">a)</string>
+    <string name="b">b)</string>
+    <string name="c">c)</string>
+    <string name="d">d)</string>
+    <string name="enterrightans">Enter Right Answer...</string>
+    <string name="option">Enter Option...</string>
+    <string name="next">NEXT</string>
+    <string name="quizfield">Quiz Field:</string>
+    <string name="delete">Delete</string>
+    <string name="playedquiz">Played Quiz:</string>
+    <string name="enterfieldofquiz">Enter Field Of Quiz</string>
+    <string name="quizname">Quiz Name:</string>
+    <string name="noofquestions">No of Questions:</string>
+    <string name="edit">EDIT</string>
+    <string name="enterquizname">Enter Quiz Name..</string>
+    <string name="enternoofquetions">Enter no of que...</string>
+    <string name="publishedon">Published On:</string>
+    <string name="enterquizquaestions">Enter Quiz Questions:</string>
+    <string name="enterquestion">Enter question...</string>
+    <string name="createquiz">Create quiz</string>
+    <string name="adminname">Admin Name</string>
+    <string name="createdquiz">Created Quiz:</string>
+    <string name="username">User Name</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="play">Play</string>
+    <string name="create">CREATE</string>
+    <string name="reset">RESET</string>
+    <string name="fname">First Name:</string>
+    <string name="lname">Last Name:</string>
+    <string name="mo_no">Mobile No:</string>
+
+
+</resources>

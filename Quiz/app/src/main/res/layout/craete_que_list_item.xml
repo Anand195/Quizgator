@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/craetequeedittext"
+        style="@style/Title"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/border"
+        android:hint="@string/enterquestion"
+        android:layout_marginBottom="16dp"/>
+
+    <TableLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/tab2"
+        android:layout_below="@id/craetequeedittext"
+        android:layout_marginBottom="16dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp">
+
+            <EditText
+                android:id="@+id/addop1"
+                style="@style/Title"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:hint="@string/option"
+                android:layout_marginRight="6dp"/>
+
+            <EditText
+                android:id="@+id/addop2"
+                style="@style/Title"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:hint="@string/option"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/addop3"
+                style="@style/Title"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:hint="@string/option"
+                android:layout_marginRight="6dp"/>
+
+            <EditText
+                android:id="@+id/addop4"
+                style="@style/Title"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:hint="@string/option"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tab2"
+        >
+
+        <Button
+            style="@style/Button"
+            android:id="@+id/submitcreatedque"
+            android:text="@string/create"
+            android:background="@color/colorPrimary"
+            android:layout_weight="1"
+            android:layout_marginRight="12dp"
+            android:onClick="onCreateQue"/>
+
+        <Button
+            style="@style/Button"
+            android:id="@+id/resetque"
+            android:text="@string/reset"
+            android:onClick="onResetQue"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

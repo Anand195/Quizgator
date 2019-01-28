@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    <TextView
+        android:id="@+id/admint1"
+        style="@style/Heading"
+        android:text="@string/adminlogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="16dp"/>
+
+    <TextView
+        style="@style/Title"
+        android:text="@string/emailid"
+        android:id="@+id/emailid1"
+        android:layout_below="@id/admint1"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edittext1"
+        android:layout_below="@id/emailid1"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        style="@style/Title"
+        android:text="@string/password"
+        android:id="@+id/emailid2"
+        android:layout_below="@id/edittext1"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edittext2"
+        android:layout_below="@id/emailid2"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        style="@style/Button"
+        android:id="@+id/adminlogin"
+        android:text="@string/login"
+        android:background="@color/colorPrimary"
+        android:layout_below="@id/edittext2"
+        android:layout_centerHorizontal="true"
+        android:onClick="aAdminLogin"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp">
+
+    <TextView
+        android:id="@+id/username"
+        style="@style/Heading"
+        android:text="@string/username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="16dp" />
+
+    <TextView
+        style="@style/Title"
+        android:text="@string/playedquiz"
+        android:id="@+id/textb"
+        android:layout_below="@id/username"
+        android:layout_marginBottom="16dp" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/quizplayedlist"
+        android:layout_below="@id/textb"
+        android:layout_above="@id/playmorequiz">
+
+    </ListView>
+
+    <Button
+        style="@style/Button"
+        android:id="@+id/playmorequiz"
+        android:text="@string/playmorequiz"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="16dp"
+        android:onClick="onPlayMoreQuiz"/>
+
+</RelativeLayout>
